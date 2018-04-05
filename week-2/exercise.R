@@ -9,7 +9,7 @@ my_vector <- c(my_num, initials)
 vector_sum <- sum(my_vector)
 
 # Describe why this doesn't work: 
-# 
+# sum cant combine a number and a character together
 
 install.packages("stringr")
 
@@ -18,15 +18,16 @@ my_line <- "Hey, hey, this is the library"
 print(str_length(my_line))
 
 # Describe why this doesn't work: 
-# 
+# After you install a package you have to library a package so that you can use it
 
 said_the_famous <- paste(my_line, " - ", initial)
 
 # Describe why this doesn't work: 
-# 
+# Spelling error with the "initials" as opposed to "initial"
 
 
 ## Part 2 - Vector and function practice
+
 
 # Make a vector and use typeof to check what type R considers it to be
 
