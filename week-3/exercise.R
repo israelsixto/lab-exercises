@@ -1,0 +1,28 @@
+iris_df <- data.frame(iris)
+View(iris_df)
+
+# Select all values of data frame for Sepal.length
+iris$Sepal.Length
+iris_df[["Sepal.Length"]]
+
+# Select only rows of Virginica flowers
+species_virginica <- iris[iris$Species == "virginica", ]
+
+# Select only the sepal legnth of the Virginica flowers
+species_virginica$Sepal.Length
+species_virginica["Sepal.Length"]
+
+# Select rows where Petal.Length > 4.0
+iris_df[iris$Petal.Length > 4,]
+iris_df$Petal.Length > 4
+
+# Add a column to the dataframe indicating whether Petal.Length > 4.0
+iris_df$petal_length_greater <- iris$Petal.Length > 4
+iris_df$sepal_length_width_diff <- iris$Sepal.Length - iris$Sepal.Width
+
+# Find the species type of the flower that has the longest Sepal length
+iris[iris$Sepal.Length == max(iris$Sepal.Length),]$species
+max(iris$Sepal.Length)
+
+# Select rows where species type is 'setosa' and Sepal.Width > 3.0
+iris[((iris$Species == "sestosa") & (iris$Sepal.Width > 3.0)), ]
