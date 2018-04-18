@@ -1,5 +1,6 @@
 # Making vectors and Dataframes
 
+<<<<<<< HEAD
 #I don't think we had time to finish this exercise in lab
 
 # What could be an issue here?
@@ -15,6 +16,15 @@ event_capacity <- c(60, 50, 100, 100)
 # Create a vector of event names for each event 
 event_names <- ('mariokart tournament', 'salsa concert', 
                 'israel sixto ukulele concert', 'cinco de mayo celebration')
+=======
+# What could be an issue here?
+event_capacity <- c(60, 50, '100', 100)
+
+# Fix the possible error in a new variable event_capacity_new
+
+# Create a vector of event names for each event 
+event_names <- 
+>>>>>>> fdf343fdf00eb05c41d97e95624160fdf32cf8ef
   
 # Fix the error in creating this dataframe
 events <- data.frame(event_names, event_cost, event_capacity)
